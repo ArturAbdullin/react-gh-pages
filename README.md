@@ -138,6 +138,7 @@ At this point, the React app's `package.json` file includes a property named `ho
     "scripts": {
     +   "predeploy": "npm run build",
     +   "deploy": "gh-pages -d build",
+        // or "deploy": "gh-pages -d build -r {remote_url} if a remote name is different from "origin"
         "start": "react-scripts start",
         "build": "react-scripts build",
     ```
